@@ -1,0 +1,21 @@
+Package: bounceR
+Title: A Cricket package to make Hawkeye data accessible
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Richard",
+           family = "Little",
+           role = c("aut", "cre"),
+           email = "alittlefitness@gmail.com")
+Description: bounceR provides a set of functions to extract Hawkeye data for Cricket from json files on the ICC and BCCI webpages, 
+    turning them into tidy data for analysis. Current data extracted includes Test matches, ODI and IPL T20 competitions.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Imports: 
+    curl,
+    dplyr,
+    stringr,
+    tidyr,
+    jsonlite
