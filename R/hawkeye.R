@@ -86,7 +86,6 @@ get_hawkeye_stats <- function(id) {
       hawkeye_stats <- left_join(hawkeye, batter) %>%
         left_join(., non_striker) %>%
         left_join(., bowler) %>%
-        na.omit() %>%
         select(matchId, delivery, ball = ID_1, batter, batterId = ID_2, rightHandedBat, nonStriker, nonStrikerId = ID_3,
                bowler, bowlerId = ID_4, rightArmedBowl, bowlingStyle, ballSpeed = ID_5, dismissalDetails = ID_7, runs = ID_8,
                batterRuns = ID_9, bowlerRuns = ID_10, extras = ID_11, pitchX = ID_14, pitchY = ID_13, stumpsX = ID_15,
